@@ -1,0 +1,18 @@
+name: test
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+
+  build:
+
+    runs-on: test
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: test
+      run: echo 'hello world
